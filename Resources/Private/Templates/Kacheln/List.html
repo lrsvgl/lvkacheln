@@ -1,0 +1,47 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<h1>Listing for Kacheln</h1>
+
+<f:flashMessages />
+
+<table  class="tx_lvkacheln" >
+	<tr>
+		<th><f:translate key="tx_lvkacheln_domain_model_kacheln.bezeichnung" /></th>
+		<th><f:translate key="tx_lvkacheln_domain_model_kacheln.effekt" /></th>
+		<th><f:translate key="tx_lvkacheln_domain_model_kacheln.url" /></th>
+		<th><f:translate key="tx_lvkacheln_domain_model_kacheln.ueberschrift" /></th>
+		<th><f:translate key="tx_lvkacheln_domain_model_kacheln.text" /></th>
+		<th><f:translate key="tx_lvkacheln_domain_model_kacheln.bilder" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{kachelns}" as="kacheln">
+		<tr>
+			<td><f:link.action action="show" arguments="{kacheln : kacheln}"> {kacheln.bezeichnung}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{kacheln : kacheln}"> {kacheln.effekt}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{kacheln : kacheln}"> {kacheln.url}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{kacheln : kacheln}"> {kacheln.ueberschrift}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{kacheln : kacheln}"> {kacheln.text}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{kacheln : kacheln}"> {kacheln.bilder.originalResource.name}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{kacheln : kacheln}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{kacheln : kacheln}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New Kacheln</f:link.action>
+</f:section>

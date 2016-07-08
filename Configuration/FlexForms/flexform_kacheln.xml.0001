@@ -1,0 +1,53 @@
+
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Extension</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <switchableControllerActions>
+                        <TCEforms>
+                            <label>Standardaktion des Plugins</label> 
+                            <config>
+                                <type>select</type>
+                                <items>
+                                    <numIndex index="1">
+                                        <numIndex index="0">Datensatz anzeigen</numIndex>
+                                        <numIndex index="1">Kacheln->singleview;Kacheln->show;</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </switchableControllerActions>
+                    <settings.kacheln>
+                        <TCEforms>
+                            <config>
+                                <label>Kacheln Datensatz wählen</label>
+                                <type>select</type>
+                                <foreign_table>tx_lvkacheln_domain_model_kacheln</foreign_table>
+                                <minitems>1</minitems>
+                                <maxitems>1</maxitems>
+                                <multiple>1</multiple>
+                                <size>5</size>
+                                <autoSizeMax>10</autoSizeMax>
+                                <itemListStyle>Width:250px</itemListStyle>
+                            </config>
+                        </TCEforms>
+                    </settings.kacheln>
+                    <settings.kachelninterval>
+                        <TCEforms>
+                            <label>Data-Interval (0=aus)</label>
+                            <config>
+                                <type>input</type>
+                                <size>5</size>
+                            </config>
+                        </TCEforms>
+                    </settings.kachelninterval>
+                </el>
+            </ROOT>
+        </sDEF> 
+    </sheets>
+</T3DataStructure> 

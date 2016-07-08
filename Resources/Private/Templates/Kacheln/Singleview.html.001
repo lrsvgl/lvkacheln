@@ -1,0 +1,56 @@
+<f:layout name="Default"/>
+
+This Template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+Resources:
+Private:
+Templates:
+Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+    <f:comment>
+        <f:debug>{kacheln}</f:debug>
+    </f:comment>
+    <div class="masonry-grid">
+        <f:for each="{kacheln.bilder}" as="kachel" iteration="objIterator">
+            <f:if condition="{objIterator.index}=='4'">
+                <f:then>
+                    <div class="grid-item item-{objIterator.index} flip">
+                        <figure class="flip">
+                            <figcaption>
+                                <h3>{kachel.originalResource.title}</h3>
+                                <p>{kachel.originalResource.description}</p>
+                            </figcaption>
+                            <a href="{kachel.originalResource.publicUrl}" title="{kachel.originalResource.title}">
+                                <f:image src="{kachel.originalResource.publicUrl}" alt="{kachel.originalResource.title}" class="img-responsive" width="300c" height="300c"/>
+                            </a>
+                        </figure>
+                    </div>
+                </f:then>
+                <f:else>
+                    <div class="grid-item item-{objIterator.index} hover">
+                        <figure>
+                            <figcaption>
+                                <f:if condition="{kachel.originalResource.title}">
+                                    <h3>{kachel.originalResource.title}</h3>
+                                </f:if>
+                                <f:if condition="{kachel.originalResource.description}">
+                                    <p>{kachel.originalResource.description}</p>
+                                </f:if>
+
+                            </figcaption>
+                            <a href="{kachel.originalResource.publicUrl}" title="{kachel.originalResource.title}">
+                                <f:image src="{kachel.originalResource.publicUrl}" alt="{kachel.originalResource.title}" class="img-responsive" width="300c" height="300c"/>
+                            </a>
+                        </figure>
+                    </div>
+                </f:else>
+            </f:if>
+        </f:for>
+    </div>
+
+</f:section>

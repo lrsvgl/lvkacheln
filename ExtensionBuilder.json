@@ -1,0 +1,145 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    444,
+                    55
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": true,
+                    "_default4_delete": true,
+                    "customActions": [
+                        "singleview"
+                    ]
+                },
+                "name": "Kacheln",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": true,
+                    "type": "Entity",
+                    "uid": "589312611116"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "bezeichnung",
+                            "propertyType": "String",
+                            "uid": "164658916035"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "effekt",
+                            "propertyType": "Select",
+                            "uid": "979984181149"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "url",
+                            "propertyType": "String",
+                            "uid": "963397453147"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "ueberschrift",
+                            "propertyType": "String",
+                            "uid": "1056455814833"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "text",
+                            "propertyType": "Text",
+                            "uid": "1376905249500"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Bild",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "bilder",
+                            "propertyType": "Image",
+                            "uid": "358142636731"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "extbase => 7.6\nfluid => 7.6\ntypo3 => 7.6\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": ""
+        },
+        "extensionKey": "lvkacheln",
+        "name": "Kacheln",
+        "originalExtensionKey": "lvkacheln",
+        "originalVendorName": "TYPO3",
+        "persons": [],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Kacheln=>list,show,create,edit,update,delete",
+                    "noncacheableActions": "Kacheln=>create,update,delete",
+                    "switchableActions": ""
+                },
+                "key": "kacheln",
+                "name": "Kacheln"
+            }
+        ],
+        "vendorName": "TYPO3"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2016-07-06 05:27",
+        "extension_builder_version": "7.6.0",
+        "be_user": " (1)"
+    }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-07-06T17:27:30Z" product-name="lvkacheln">
+		<header/>
+		<body>
+			<trans-unit id="tx_lvkacheln_domain_model_kacheln">
+				<source>Kacheln</source>
+			</trans-unit>
+			<trans-unit id="tx_lvkacheln_domain_model_kacheln.bezeichnung">
+				<source>Bezeichnung</source>
+			</trans-unit>
+			<trans-unit id="tx_lvkacheln_domain_model_kacheln.effekt">
+				<source>Effekt</source>
+			</trans-unit>
+			<trans-unit id="tx_lvkacheln_domain_model_kacheln.url">
+				<source>Url</source>
+			</trans-unit>
+			<trans-unit id="tx_lvkacheln_domain_model_kacheln.ueberschrift">
+				<source>Ueberschrift</source>
+			</trans-unit>
+			<trans-unit id="tx_lvkacheln_domain_model_kacheln.text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="tx_lvkacheln_domain_model_kacheln.bilder">
+				<source>Bilder</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

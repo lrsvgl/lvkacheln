@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-07-06T17:27:30Z" product-name="lvkacheln">
+		<header/>
+		<body>
+			<trans-unit id="bezeichnung.description">
+				<source>bezeichnung</source>
+			</trans-unit>
+			<trans-unit id="effekt.description">
+				<source>effekt</source>
+			</trans-unit>
+			<trans-unit id="url.description">
+				<source>url</source>
+			</trans-unit>
+			<trans-unit id="ueberschrift.description">
+				<source>ueberschrift</source>
+			</trans-unit>
+			<trans-unit id="text.description">
+				<source>text</source>
+			</trans-unit>
+			<trans-unit id="bilder.description">
+				<source>Bild</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

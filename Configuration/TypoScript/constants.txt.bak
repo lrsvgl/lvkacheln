@@ -1,0 +1,19 @@
+
+plugin.tx_lvkacheln_kacheln {
+	view {
+		# cat=plugin.tx_lvkacheln_kacheln/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:lvkacheln/Resources/Private/Templates/
+		# cat=plugin.tx_lvkacheln_kacheln/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:lvkacheln/Resources/Private/Partials/
+		# cat=plugin.tx_lvkacheln_kacheln/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:lvkacheln/Resources/Private/Layouts/
+	}
+	settings {
+		# cat=plugin.tx_lvkacheln_kacheln//a; type=string; label=Data-Interval
+		dataInterval = 4500
+	}
+	persistence {
+		# cat=plugin.tx_lvkacheln_kacheln//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
