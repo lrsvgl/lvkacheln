@@ -1,15 +1,38 @@
-Extension Manual
-=================
+lvkacheln
+=========
 
-This is a template manual aiming to pave the way to developers when it comes about documentation. The template provides a structure that a developer can take over and, in addition, many useful snippets and examples. Documentation is written in reST format. Refer to Help writing reStructuredText to get some more insight about the syntax and available reST editors. For instance, you might be particularly interested how you can :
+- Ausgabe von Datensätzen als Kacheln
+- zuweisbare Hover-Effekte
+- Flip, Unblur part of Image, CSS-Standards
 
-* generate the documentation using on-line services (@todo to write) 
-* `make links`_ accros projects
-* how you should write TypoScript reference.
+todo:
+- masrony grid richtet sich nicht immer richtig in Höhe aus
+- bei responsive sollen Zusatzbiler nicht in Lightbox gezeigt werden sonder im Grid (? evtl deaktivieren)
 
-Any idea or suggestion for improving this template `can be drop`_ to our team_. And remember: documentation is like gift wrapping, it looks like superfluous, but your friend tends to be rather disappointed when their presents arrive in supermarket carrier bags. (Documentation-Driven Design quote)
+howto:
+- Datensätze für eine Ausgabe in einem Ordner oder einer Seite anlegen
+- z.B: die Datensätze für "Wir über uns" auf der Seite "wir über uns anlegen"
+- Als Inhaltselement Plugin wählen und
+- als Plugin "Kacheln" wählen
+- im Plugin im Punkt "Datensatzsammlung" dann z.B. die Seite "Wir über uns wählen"
 
-.. _can be drop: http://forge.typo3.org/projects/typo3v4-official_extension_template/issues
-.. _team: http://forge.typo3.org/projects/typo3v4-official_extension_template
-.. _make links: RestructuredtextHelp.html#cross-linking
-.. _can write TypoScript: RestructuredtextHelp.html#typoscript-reference
+
+Effekte und Möglichkeiten:
+==========================
+hell/dunkel u. monochrom/Farbe
+- Link setzen (keine Lightbox)
+- mehrere Bilder erzeugen Lightbox (wenn kein Link gesetzt)
+- Überschrift erzeugt ein Text unten im Bild
+- kein Text
+
+Flip
+- Link setzen (keine Lightbox)
+- mehrere Bilder erzeugen Lightbox (wenn kein Link gesetzt)
+- nur Überschrift erzeugt ein Text unten im Bild
+- Text erzeugt eine Flip-Rückseite ohne Bild mit Text und Überschrift (falls eingegeben)
+
+Unschärfe
+- Link setzen
+- Überschrift erzeugt ein Text unten im Bild
+- keine Lightbox, mehrere Bild werden nicht ausgegeben
+- keine Textausgabe

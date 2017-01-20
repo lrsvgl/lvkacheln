@@ -133,10 +133,11 @@ return array(
 				'type' => 'select',
 				'renderType' => 'selectSingle',
 				'items' => array(
-					array('Monochrom / Farbe', 0),
+					array('Kein Effekt', 0),
 					array('Dunkel / Hell', 1),
 					array('Unscharf / Scharf', 2),
-					array('Flip', 3)
+					array('Flip', 3),
+					array('Monochrom / Farbe', 4),
 				),
 				'size' => 1,
 				'maxitems' => 1,
@@ -148,9 +149,24 @@ return array(
 			'label' => 'LLL:EXT:lvkacheln/Resources/Private/Language/locallang_db.xlf:tx_lvkacheln_domain_model_kacheln.url',
 			'config' => array(
 				'type' => 'input',
-				'size' => 30,
-				'eval' => 'trim'
-			),
+				'size' => '30',
+				'softref' => 'typolink',
+				'wizards' => array(
+					'_PADDING' => 2,
+					'link' => array(
+						'type' => 'popup',
+						'title' => 'Link',
+						'icon' => 'EXT:example/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
+						'module' => array(
+							'name' => 'wizard_element_browser',
+							'urlParameters' => array(
+								'mode' => 'wizard'
+							) ,
+						) ,
+						'JSopenParams' => 'height=600,width=500,status=0,menubar=0,scrollbars=1'
+					)
+				)
+			)
 		),
 		'ueberschrift' => array(
 			'exclude' => 0,

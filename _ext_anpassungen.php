@@ -29,10 +29,11 @@ array(
 			'type' => 'select',
 			'renderType' => 'selectSingle',
 			'items' => array(
-				array('Monochrom / Farbe', 0),
+				array('Kein Effekt', 0),
 				array('Dunkel / Hell', 1),
 				array('Unscharf / Scharf', 2),
-				array('Flip', 3)
+				array('Flip', 3),
+				array('Monochrom / Farbe', 4),
 			),
 			'size' => 1,
 			'maxitems' => 1,
